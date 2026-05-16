@@ -21,8 +21,14 @@ A modern, responsive personal portfolio for **Rohal Jamal** built with **HTML5**
 │   └── workflows/
 │       └── deploy.yml
 ├── index.html
+├── package.json
+├── package-lock.json
 ├── script.js
 ├── styles.css
+├── vendor/
+│   ├── ScrollTrigger.min.js
+│   ├── gsap.min.js
+│   └── three.min.js
 └── README.md
 ```
 
@@ -35,6 +41,19 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000` in your browser.
+
+## Dependency notes
+
+The project vendors local copies of `three` and `gsap` inside `vendor/` so the deployed site does not rely on third-party CDN script execution.
+
+If you ever want to refresh those files locally:
+
+```bash
+npm install
+cp node_modules/three/build/three.min.js vendor/three.min.js
+cp node_modules/gsap/dist/gsap.min.js vendor/gsap.min.js
+cp node_modules/gsap/dist/ScrollTrigger.min.js vendor/ScrollTrigger.min.js
+```
 
 ## GitHub Pages deployment
 

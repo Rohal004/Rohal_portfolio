@@ -1,0 +1,16 @@
+{
+  "name": "rohal_portfolio",
+  "version": "1.0.0",
+  "description": "A modern responsive personal portfolio for Rohal Jamal built with HTML, CSS, JavaScript, Three.js, and GSAP.",
+  "main": "script.js",
+  "scripts": {
+    "check": "node --check script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "three": "^0.155.0"
+  }
+}
